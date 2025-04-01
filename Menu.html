@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Menu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+            background: #171b1f; 
+
+        }
+        h1{
+          text-align: center;
+          font-size: 40px;
+          color: aliceblue; 
+
+
+        }
+        .menu {
+            background: #171b1f; 
+            color: aliceblue; 
+            padding: 100px 20px 40px;
+        }
+
+        .menu_title {
+            text-align: center;
+            font-size: 30px;
+            font-weight: 500;
+        }
+
+        .menu_container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .menu_items {
+            text-align: center;
+            margin: 10px;
+        }
+
+        .menu_items img {
+            width: 220px; 
+            height: 220px; 
+            object-fit: cover; 
+            border-radius: 8px; 
+        }
+
+        .menu_text h3 {
+            margin: 10px 0 0;
+            font-weight: 600;
+            font-size: 24px;
+        }
+
+        .menu_text p {
+            font-size: 17px;
+        }
+        #cart{
+            color: aliceblue;
+            text-decoration: none;
+            cursor: pointer;
+            
+            
+        }
+        #cart:hover{
+            color: #ffb142;
+        }
+        #cart p{
+           margin: 10px auto;
+        }
+        i:hover{
+            color: #ffb142;
+        }
+
+        @media (max-width: 1200px) {
+            .menu_container {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        @media (max-width: 992px) {
+            .menu_container {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .menu_container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 576px) {
+            .menu_container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+          <div class="nav_logo">
+            <a href="#">
+              <img src="logo.png" alt="Logo" />
+              <h2>Tasty Tales</h2>
+            </a>
+          </div>
+  
+          <input type="checkbox" id="click" />
+          <label for="click">
+            <i class="menu_btn bx bx-menu"></i>
+            <i class="close_btn bx bx-x"></i>
+          </label>
+  
+          <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Menu.html">Our Menu</a></li>
+            <li><a href="Why_US.html">Why Us</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li><a href="Contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+      </header>
+      
+      <section class="menu" id="menu">
+      <h2 class="menu_title">Varieties of Kottu</h2>
+        <div class="menu_container">
+            <div class="menu_items">
+                <img src="Chilli Koththu parotta.jpg" alt="Chilli Koththu" />
+                <div class="menu_text">
+                    <h3>Chilli Kottu</h3>
+                    <p>Rs.900.00</p>
+                    <a href="" id="cart">  
+                     <p>Add to cart &nbsp;&nbsp;&nbsp;
+                    <i class="fa-solid fa-cart-shopping"></i></p>
+                </a>
+                </div>
+            </div>
+            <div class="menu_items">
+                <img src="Chicken Koththu.jpg" alt="Chicken kottu" />
+                <div class="menu_text">
+                    <h3>Chicken kottu</h3>
+                    <p>Rs.750.00</p>
+                    <a href="" id="cart">  
+                     <p>Add to cart &nbsp;&nbsp;&nbsp;
+                    <i class="fa-solid fa-cart-shopping"></i></p>
+                </a>
+                </div>
+            </div>
+            <div class="menu_items">
+                <img src="Egg Koththu.jpg" alt="Egg Koththu" />
+                <div class="menu_text">
+                    <h3>Egg Kottu</h3>
+                    <p>Rs.550.00</p>
+                    <a href="" id="cart">  
+                     <p>Add to cart &nbsp;&nbsp;&nbsp;
+                    <i class="fa-solid fa-cart-shopping"></i></p>
+                </a>
+                </div>
+            </div>
+            <div class="menu_items">
+                <img src="Veg Koththu.jpg" alt="Veg Koththu" />
+                <div class="menu_text">
+                    <h3>Vegetable Kottu</h3>
+                    <p>Rs.400.00</p>
+                    <a href="" id="cart">  
+                        <p>Add to cart &nbsp;&nbsp;&nbsp;
+                       <i class="fa-solid fa-cart-shopping"></i></p>
+                   </a>
+                </div>
+            </div>
+            <div class="menu_items">
+                <img src="mutton-kothu-parota.jpg" alt="Mutton kottu" />
+                <div class="menu_text">
+                    <h3>Mutton Kottu</h3>
+                    <p>Rs.1200.00</p>
+                   <a href="" id="cart">  
+                     <p>Add to cart &nbsp;&nbsp;&nbsp;
+                    <i class="fa-solid fa-cart-shopping"></i></p>
+                </a>
+                </div>
+            </div>        
+        </div>
+    </section>
+
+    <section class="menu" id="menu">
+      <h2 class="menu_title">Briyani</h2>
+        <div class="menu_container">
+            <div class="menu_items">
+                <img src="Beef Biryani.jpg" alt="Beef Biryani" />
+                <div class="menu_text">
+                    <h3>Beef Biryani</h3>
+                    <p>Rs.850.00</p>
+                   <a href="" id="cart">  
+                     <p>Add to cart &nbsp;&nbsp;&nbsp;
+                    <i class="fa-solid fa-cart-shopping"></i></p>
+                </a>
+                </div>
+            </div>
+            <div class="menu_items">
+                <img src="Mutton Biryani.jpg" alt="Mutton Biryani" />
+                <div class="menu_text">
+                    <h3>Mutton Biryani</h3>
+                    <p>Rs.1150.00</p>
+                   <a href="" id="cart">  
+                     <p>Add to cart &nbsp;&nbsp;&nbsp;
+                    <i class="fa-solid fa-cart-shopping"></i></p>
+                </a>
+                </div>
+            </div>
+            <div class="menu_items">
+                <img src="Egg Biryani.jpg" alt="Egg Biryani" />
+                <div class="menu_text">
+                    <h3>Egg Biryani</h3>
+                    <p>Rs.500.00</p>
+                   <a href="" id="cart">  
+                     <p>Add to cart &nbsp;&nbsp;&nbsp;
+                    <i class="fa-solid fa-cart-shopping"></i></p>
+                </a>
+                </div>
+            </div>
+            <div class="menu_items">
+                <img src="Prawn Biryani.jpg" alt="Prawn Biryani" />
+                <div class="services_text">
+                    <h3>Prawn Biryani</h3>
+                    <p>Rs.650.00</p>
+                   <a href="" id="cart">  
+                     <p>Add to cart &nbsp;&nbsp;&nbsp;
+                    <i class="fa-solid fa-cart-shopping"></i></p>
+                </a>
+                </div>
+            </div>
+            <div class="menu_items">
+                <img src="Chicken Biryani.jpg" alt="Chicken Biryani" />
+                <div class="services_text">
+                    <h3>Chicken Biryani</h3>
+                    <p>Rs.900.00</p>
+                    <a href="" id="cart">  
+                     <p>Add to cart &nbsp;&nbsp;&nbsp;
+                    <i class="fa-solid fa-cart-shopping"></i></p>
+                </a>
+                </div>
+            </div>        
+            <div class="menu_items">
+              <img src="Chicken Dum Biryani.jpg" alt="Chicken Dum Biryani" />
+              <div class="menu_text">
+                  <h3>Dum Biryani</h3>
+                  <p>Rs.1000.00</p>
+                  <a href="" id="cart">  
+                     <p>Add to cart &nbsp;&nbsp;&nbsp;
+                    <i class="fa-solid fa-cart-shopping"></i></p>
+                </a>
+              </div>
+          </div>   
+          <div class="menu_items">
+            <img src="Paneer Biryani.jpg" alt="Paneer Biryani" />
+            <div class="menu_text">
+                <h3>Paneer Biryani</h3>
+                <p>Rs.750.00</p>
+                <a href="" id="cart">  
+                     <p>Add to cart &nbsp;&nbsp;&nbsp;
+                    <i class="fa-solid fa-cart-shopping"></i></p>
+                </a>
+            </div>
+         
+        </div>   
+        </div>
+    </section>
+
+    <section class="menu" id="menu">
+      <h2 class="menu_title">Meals</h2>
+        <div class="menu_container">
+            <div class="menu_items">
+                <img src="Rice and Chicken curry.jpg" alt="Rice and Chicken curry" />
+                <div class="menu_text">
+                    <h3>Rice and Chicken curry</h3>
+                    <p>Rs.600.00</p>
+                    <a href="" id="cart">  
+                     <p>Add to cart &nbsp;&nbsp;&nbsp;
+                    <i class="fa-solid fa-cart-shopping"></i></p>
+                </a>
+                </div>
+            </div>
+            <div class="menu_items">
+                <img src="Rice and Mutton curry.jpg" alt="Rice and Mutton curry" />
+                <div class="menu_text">
+                    <h3>Rice and Mutton curry</h3>
+                    <p>Rs.700.00</p>
+                    <a href="" id="cart">  
+                     <p>Add to cart &nbsp;&nbsp;&nbsp;
+                    <i class="fa-solid fa-cart-shopping"></i></p>
+                </a>
+                </div>
+            </div>
+            <div class="menu_items">
+                <img src="Veg Rice and Curry.jpg" alt="Veg Rice and Curry" />
+                <div class="menu_text">
+                    <h3>Vegetable Rice and Curry</h3>
+                    <p>Rs.350.00</p>
+                    <a href="" id="cart">  
+                     <p>Add to cart &nbsp;&nbsp;&nbsp;
+                    <i class="fa-solid fa-cart-shopping"></i></p>
+                </a>
+                </div>
+            </div>
+            <div class="menu_items">
+                <img src="Veg Fried Rice.jpg" alt="Veg Fried Rice" />
+                <div class="menu_text">
+                    <h3>Vegetable Fried Rice</h3>
+                    <p>Rs.750.00</p>
+                    <a href="" id="cart">  
+                     <p>Add to cart &nbsp;&nbsp;&nbsp;
+                    <i class="fa-solid fa-cart-shopping"></i></p>
+                </a>
+                </div>
+             
+            </div>
+            <div class="menu_items">
+                <img src="Mushroom Fried Rice.jpg" alt="Mushroom Fried Rice" />
+                <div class="menu_text">
+                    <h3>Mushroom Fried Rice</h3>
+                    <p>Rs.850.00</p>
+                   <a href="" id="cart">  
+                     <p>Add to cart &nbsp;&nbsp;&nbsp;
+                    <i class="fa-solid fa-cart-shopping"></i></p>
+                </a>
+                </div>
+            </div>       
+          <div class="menu_items">
+            <img src="Veg Noodles.jpg" alt="Veg Noodles" />
+            <div class="menu_text">
+                <h3>Veg Noodles</h3>
+                <p>Rs.500.00</p>
+                <a href="" id="cart">  
+                     <p>Add to cart &nbsp;&nbsp;&nbsp;
+                    <i class="fa-solid fa-cart-shopping"></i></p>
+                </a>
+            </div>
+        </div>
+        <div class="menu_items">
+          <img src="Chicken Noodles.jpg" alt="Chicken Noodles" />
+          <div class="menu_text">
+              <h3>Chicken Noodles</h3>
+              <p>Rs.650.00</p>
+             <a href="" id="cart">  
+                     <p>Add to cart &nbsp;&nbsp;&nbsp;
+                    <i class="fa-solid fa-cart-shopping"></i></p>
+                </a>
+          </div>
+    </div>
+      <div class="menu_items">
+        <img src="Spicy Chilli Garlic Noodles.jpg" alt="Spicy Chilli Garlic Noodles" />
+        <div class="menu_text">
+            <h3>Garlic Noodles</h3>
+            <p>Rs.550.00</p>
+            <a href="" id="cart">  
+                     <p>Add to cart &nbsp;&nbsp;&nbsp;
+                    <i class="fa-solid fa-cart-shopping"></i></p>
+                </a>
+        </div>
+    </div>       
+ </div>
+    </section>
+    <section class="menu" id="menu">
+      <h2 class="menu_title">Signature Dishes</h2>
+        <div class="menu_container">
+            <div class="menu_items">
+                <img src="Prawn Curry.jpg" alt="Prawn Curry" />
+                <div class="menu_text">
+                    <h3>Prawn Curry</h3>
+                    <p>Rs.400.00</p>
+                    <a href="" id="cart">  
+                     <p>Add to cart &nbsp;&nbsp;&nbsp;
+                    <i class="fa-solid fa-cart-shopping"></i></p>
+                </a>
+                </div>
+            </div>
+            <div class="menu_items">
+                <img src="Crab Curry.jpg" alt="Crab Curry" />
+                <div class="menu_text">
+                    <h3>Crab Curry</h3>
+                    <p>Rs.550.00</p>
+                   <a href="" id="cart">  
+                     <p>Add to cart &nbsp;&nbsp;&nbsp;
+                    <i class="fa-solid fa-cart-shopping"></i></p>
+                </a>
+                </div>
+            </div>
+            <div class="menu_items">
+                <img src="Beef curry.jpg" alt="Beef curry" />
+                <div class="menu_text">
+                    <h3>Beef Curry</h3>
+                    <p>Rs.450.00</p>
+                    <a href="" id="cart">  
+                     <p>Add to cart &nbsp;&nbsp;&nbsp;
+                    <i class="fa-solid fa-cart-shopping"></i></p>
+                </a>
+                </div>
+            </div>
+            <div class="menu_items">
+                <img src="Mutton Curry.jpg" alt="Mutton Curry" />
+                <div class="menu_text">
+                    <h3>Mutton Curry</h3>
+                    <p>Rs.600.00</p>
+                   <a href="" id="cart">  
+                     <p>Add to cart &nbsp;&nbsp;&nbsp;
+                    <i class="fa-solid fa-cart-shopping"></i></p>
+                </a>
+                </div>
+            </div>
+            <div class="menu_items">
+                <img src="Fish curry.jpg" alt="Fish curry" />
+                <div class="menu_text">
+                    <h3>Fish Curry</h3>
+                    <p>Rs.350.00</p>
+                    <a href="" id="cart">  
+                     <p>Add to cart &nbsp;&nbsp;&nbsp;
+                    <i class="fa-solid fa-cart-shopping"></i></p>
+                </a>
+                </div>
+            </div>        
+            <div class="menu_items">
+              <img src="chicken Chettinad Curry.jpg" alt="Chicken Chettinad Curry" />
+              <div class="menu_text">
+                  <h3>Chicken Chettinad Curry</h3>
+                  <p>Rs.650.00</p>
+                <a href="" id="cart">  
+                     <p>Add to cart &nbsp;&nbsp;&nbsp;
+                    <i class="fa-solid fa-cart-shopping"></i></p>
+                </a>
+              </div>
+          </div> 
+        </div>
+    </section>
+
+    
+
+    <section class="menu" id="menu">
+      <h2 class="menu_title">Refreshments</h2>
+        <div class="menu_container">
+            <div class="menu_items">
+                <img src="Apple juice.jpg" alt="Apple juice" />
+                <div class="menu_text">
+                    <h3>Apple juice</h3>
+                    <p>Rs.400.00</p>
+                   <a href="" id="cart">  
+                     <p>Add to cart &nbsp;&nbsp;&nbsp;
+                    <i class="fa-solid fa-cart-shopping"></i></p>
+                </a>
+                </div>
+            </div>
+            <div class="menu_items">
+                <img src="Lemon juice.jpg" alt="Lemon juice" />
+                <div class="menu_text">
+                    <h3>Lemon juice</h3>
+                    <p>Rs.300.00</p>
+                    <a href="" id="cart">  
+                     <p>Add to cart &nbsp;&nbsp;&nbsp;
+                    <i class="fa-solid fa-cart-shopping"></i></p>
+                </a>
+                </div>
+            </div>
+            <div class="menu_items">
+                <img src="Mango juice.jpg" alt="Mango juice" />
+                <div class="menu_text">
+                    <h3>Mango juice</h3>
+                    <p>Rs.380.00</p>
+                    <a href="" id="cart">  
+                     <p>Add to cart &nbsp;&nbsp;&nbsp;
+                    <i class="fa-solid fa-cart-shopping"></i></p>
+                </a>
+                </div>
+            </div>
+            <div class="menu_items">
+                <img src="orange juice.jpg" alt="orange juice" />
+                <div class="menu_text">
+                    <h3>orange juice</h3>
+                    <p>Rs.350.00</p>
+                   <a href="" id="cart">  
+                     <p>Add to cart &nbsp;&nbsp;&nbsp;
+                    <i class="fa-solid fa-cart-shopping"></i></p>
+                </a>
+                </div>
+            </div>
+            <div class="menu_items">
+                <img src="Pineapple juice.jpg" alt="Pineapple juice" />
+                <div class="menu_text">
+                    <h3>Pineapple juice</h3>
+                    <p>Rs.420.00</p>
+                  <a href="" id="cart">  
+                     <p>Add to cart &nbsp;&nbsp;&nbsp;
+                    <i class="fa-solid fa-cart-shopping"></i></p>
+                </a>
+                </div>
+            </div>     
+            <div class="menu_items">
+              <img src="Strawberry juice.jpg" alt="Strawberry juice" />
+              <div class="menu_text">
+                  <h3>Strawberry juice</h3>
+                  <p>Rs.600.00</p>
+                <a href="" id="cart">  
+                     <p>Add to cart &nbsp;&nbsp;&nbsp;
+                    <i class="fa-solid fa-cart-shopping"></i></p>
+                </a>
+              </div>
+          </div>   
+          <div class="menu_items">
+            <img src="watermelon juice.jpg" alt="watermelon juice" />
+            <div class="menu_text">
+                <h3>watermelon juice</h3>
+                <p>Rs.300.00</p>
+                <a href="" id="cart">  
+                     <p>Add to cart &nbsp;&nbsp;&nbsp;
+                    <i class="fa-solid fa-cart-shopping"></i></p>
+                </a>
+            </div>
+        </div>   
+        <div class="menu_items">
+          <img src="Avacado juice.jpg" alt="Avacado juice" />
+          <div class="menu_text">
+              <h3>Avacado shake</h3>
+              <p>Rs.550.00</p>
+              <a href="" id="cart">  
+                     <p>Add to cart &nbsp;&nbsp;&nbsp;
+                    <i class="fa-solid fa-cart-shopping"></i></p>
+                </a>
+          </div>
+      </div>      
+        </div>
+    </section>
+
+    <section class="menu" id="menu">
+      <h2 class="menu_title">Snacks & Short Eats</h2>
+        <div class="menu_container">
+            <div class="menu_items">
+                <img src="Mutton roll.jpg" alt="Mutton roll" />
+                <div class="menu_text">
+                    <h3>Mutton Roll</h3>
+                    <p>Rs.150.00</p>
+                  <a href="" id="cart">  
+                     <p>Add to cart &nbsp;&nbsp;&nbsp;
+                    <i class="fa-solid fa-cart-shopping"></i></p>
+                </a>
+                </div>
+            </div>
+            <div class="menu_items">
+                <img src="chicken_samosa.jpg" alt="Chicken samosa" />
+                <div class="menu_text">
+                    <h3>Chicken Samosa</h3>
+                    <p>Rs.120.00</p>
+                   <a href="" id="cart">  
+                     <p>Add to cart &nbsp;&nbsp;&nbsp;
+                    <i class="fa-solid fa-cart-shopping"></i></p>
+                </a>
+                </div>
+            </div>
+            <div class="menu_items">
+                <img src="Vegetable rotti.jpg" alt="Vegetable rotti" />
+                <div class="menu_text">
+                    <h3>Vegetable Rotti</h3>
+                    <p>Rs.70.00</p>
+                   <a href="" id="cart">  
+                     <p>Add to cart &nbsp;&nbsp;&nbsp;
+                    <i class="fa-solid fa-cart-shopping"></i></p>
+                </a>
+                </div>
+            </div>
+            <div class="menu_items">
+                <img src="Masala Vadai.jpg" alt="Masala Vadai" />
+                <div class="menu_text">
+                    <h3>Masala Vadai</h3>
+                    <p>Rs.100.00</p>
+                   <a href="" id="cart">  
+                     <p>Add to cart &nbsp;&nbsp;&nbsp;
+                    <i class="fa-solid fa-cart-shopping"></i></p>
+                </a>
+                </div>
+            </div>
+            <div class="menu_items">
+                <img src="cutlet.jpg" alt="Fish cutlet" />
+                <div class="menu_text">
+                    <h3>Fish Cutlet</h3>
+                    <p>Rs.120.00</p>
+                    <a href="" id="cart">  
+                     <p>Add to cart &nbsp;&nbsp;&nbsp;
+                    <i class="fa-solid fa-cart-shopping"></i></p>
+                </a>
+                </div>
+            </div>        
+        </div>
+    </section>
+
+    <section class="menu" id="menu">
+      <h2 class="menu_title">Desserts</h2>
+        <div class="menu_container">
+            <div class="menu_items">
+                <img src="Chocolate Milkshake.jpg" alt="Chocolate Milkshake" />
+                <div class="menu_text">
+                    <h3>Chocolate Milkshake </h3>
+                    <p>Rs.700.00</p>
+                    <a href="" id="cart">  
+                     <p>Add to cart &nbsp;&nbsp;&nbsp;
+                    <i class="fa-solid fa-cart-shopping"></i></p>
+                </a>
+                </div>
+            </div>
+            <div class="menu_items">
+                <img src="Blue Breeze Mojito.jpg" alt="Blue Breeze Mojito" />
+                <div class="menu_text">
+                    <h3>Blue Breeze Mojito with lemon</h3>
+                    <p>Rs.800.00</p>
+                    <a href="" id="cart">  
+                     <p>Add to cart &nbsp;&nbsp;&nbsp;
+                    <i class="fa-solid fa-cart-shopping"></i></p>
+                </a>
+                </div>
+            </div>
+            <div class="menu_items">
+                <img src="Blueberry Lemon whoopie pies.jpg" alt="Blueberry Lemon whoopie pies" />
+                <div class="menu_text">
+                    <h3>Blueberry Lemon whoopie pies</h3>
+                    <p>Rs.500.00</p>
+                    <a href="" id="cart">  
+                     <p>Add to cart &nbsp;&nbsp;&nbsp;
+                    <i class="fa-solid fa-cart-shopping"></i></p>
+                </a>
+                </div>
+            </div>
+            <div class="menu_items">
+                <img src="Gulab Jamun Custard.jpg" alt="Gulab Jamun Custard" />
+                <div class="menu_text">
+                    <h3>Gulab Jamun Custard</h3>
+                    <p>Rs.700.00</p>
+                    <a href="" id="cart">  
+                     <p>Add to cart &nbsp;&nbsp;&nbsp;
+                    <i class="fa-solid fa-cart-shopping"></i></p>
+                </a>
+                </div>
+            </div>
+            <div class="menu_items">
+                <img src="Passion Fruit Mojito.jpg" alt="Passion Fruit Mojito" />
+                <div class="menu_text">
+                    <h3>Passion Fruit Mojito</h3>
+                    <p>Rs.760.00</p>
+                   <a href="" id="cart">  
+                     <p>Add to cart &nbsp;&nbsp;&nbsp;
+                    <i class="fa-solid fa-cart-shopping"></i></p>
+                </a>
+                </div>
+            </div> 
+            <div class="menu_items">
+              <img src="Cheese cake.jpg" alt="Cheese cake" />
+              <div class="menu_text">
+                  <h3>Cheese Cake</h3>
+                  <p>Rs.380.00</p>
+                  <a href="" id="cart">  
+                     <p>Add to cart &nbsp;&nbsp;&nbsp;
+                    <i class="fa-solid fa-cart-shopping"></i></p>
+                </a>
+              </div>
+          </div>   
+          <div class="menu_items">
+            <img src="Kulfi.jpg" alt="Kulfi" />
+            <div class="menu_text">
+                <h3>Kulfi</h3>
+                <p>Rs.250.00</p>
+                <a href="" id="cart">  
+                     <p>Add to cart &nbsp;&nbsp;&nbsp;
+                    <i class="fa-solid fa-cart-shopping"></i></p>
+                </a>
+            </div>
+        </div>          
+        </div>
+    </section>
+</body>
+</html>
